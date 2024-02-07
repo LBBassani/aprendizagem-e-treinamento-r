@@ -24,3 +24,4 @@ dataset2 <- copy(dataset)
 dataset2[, coluna := 1L]
 
 # crie o rank decrescente do mpg utilizando o data.table
+setorder(dataset, cols = -'mpg')
